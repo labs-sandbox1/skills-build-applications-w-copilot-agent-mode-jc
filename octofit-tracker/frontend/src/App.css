@@ -1,0 +1,200 @@
+/* Global Styles */
+.App {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #2d3748;
+}
+
+/* Navigation */
+.navbar {
+  background: linear-gradient(90deg, #4c51bf 0%, #6366f1 100%) !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.octofit-logo {
+  height: 40px;
+  width: auto;
+  margin-right: 10px;
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.9) !important;
+  margin: 0 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #fbbf24 !important;
+  transform: translateY(-2px);
+}
+
+/* Container and Content */
+.container {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  padding: 2rem;
+  margin-top: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #4c51bf;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  background: linear-gradient(90deg, #4c51bf 0%, #6366f1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.lead {
+  color: #4a5568;
+  font-size: 1.2rem;
+}
+
+/* Tables */
+.table {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.table thead {
+  background: linear-gradient(90deg, #4c51bf 0%, #6366f1 100%);
+  color: white;
+}
+
+.table thead th {
+  border: none;
+  padding: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(99, 102, 241, 0.05);
+}
+
+.table tbody tr {
+  transition: all 0.3s ease;
+}
+
+.table tbody tr:hover {
+  background-color: rgba(99, 102, 241, 0.1);
+  transform: scale(1.01);
+}
+
+.table td {
+  padding: 1rem;
+  vertical-align: middle;
+  border-color: rgba(99, 102, 241, 0.1);
+}
+
+/* Cards */
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  background: white;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+  color: #4c51bf;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.card-text {
+  color: #4a5568;
+}
+
+/* Buttons */
+.btn-primary {
+  background: linear-gradient(90deg, #4c51bf 0%, #6366f1 100%);
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(90deg, #3730a3 0%, #4c51bf 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Links */
+a {
+  color: #4c51bf;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: #6366f1;
+  text-decoration: underline;
+}
+
+/* Alerts */
+.alert {
+  border-radius: 10px;
+  border: none;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.alert-danger {
+  background-color: #fee;
+  color: #c53030;
+}
+
+/* Loading States */
+.container.mt-4 {
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Welcome Page */
+.welcome-content {
+  text-align: center;
+  padding: 3rem 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    margin: 1rem;
+    padding: 1rem;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  .octofit-logo {
+    height: 30px;
+  }
+}
