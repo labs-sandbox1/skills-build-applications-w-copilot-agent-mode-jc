@@ -1,5 +1,5 @@
 ---
-agent: 'agent'
+agent: 'agent' 
 description: 'Create a Django project, start it, and run it'
 ---
 
